@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teachers Day</title>
+
+    <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="Images/pexels-chuck-3704611 (1).jpg" alt="" class="image">
+                <div class="image-text">
+                    <h2>
+                        Happy<br>
+                        Teachers Day <br>
+                    </h2>
+                  
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="Images/IMG_20240903_132215718.jpg" alt="" class="image">
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="Images/IMG_1224.jpg" alt="" class="image">
+            </div>
+        </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+</body>
+</html>
